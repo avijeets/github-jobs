@@ -1,0 +1,62 @@
+/* Global */
+
+body {
+  padding: 50px;
+  background-color: #ecf0f1;
+  font: 14px "Avenir Next", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #2980b9;
+}
+
+/* Search Page */
+
+.form-title {
+    font-size:18px;
+    color:#2ecc71;
+}
+
+.form-subtitle {
+    font-size: 16px;
+    color: #34495e;
+}
+
+/* Result Page */
+
+.left {
+    width:50%;
+    text-align:left;
+    font-size:18px;
+    font-weight:bold;
+    color:#2ecc71;
+}
+
+.right {
+    width:50%;
+    float:right;
+    text-align:right;
+    color:#2ecc71;
+}
+
+
+.date {
+    font-size:15px;
+    font-weight:600;
+    color:#34495e;
+}
+
+.company {
+    font-size:14px;
+    font-weight:bold;
+    color:#34495e;
+}
+
+.description {
+    color:#000;
+}
+
+.apply {
+    font-weight:bold;
+    color:#000;
+}
