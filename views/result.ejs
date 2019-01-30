@@ -1,0 +1,23 @@
+<% include ./partials/header %>
+
+<h3><a href="/">← Go back</a></h1>
+<hr>
+
+<h1>Job Explorer Results</h1>
+<p> Enjoy the job postings below!</p>
+<hr>
+
+<div class="container">
+	<% data.forEach(function(jobs){ %>
+		<div class="content">
+		        <div class="left"><%= jobs["title"] %></div> 
+		        <div class="right"><span class="date">Posted on: <%= jobs["created_at"] %></span></div>
+		        <div class="company" ><%= jobs["company"] %>  - <%= jobs["location"] %> </div>
+				<div class="description"><%- jobs["description"] %></div>
+		        <div class ="apply"><%- jobs["how_to_apply"] %></div>
+		    </div>
+		</div>
+		<hr>
+    <% }); %>  
+
+<% include ./partials/footer %>
