@@ -1,0 +1,28 @@
+<% include ./partials/header %>
+
+<h1>Job Explorer</h1>
+<p>Welcome! Search for job postings that cater to your technology and location needs. </p>
+<p>Once you submit your requested parameters, this application can find better suiting job postings that you may interest you. 
+	This application parses through all the information given from job postings and gives you all relevant information about the role and how to apply!</p>
+
+<form action="/result" method="GET">
+	<div class="input-group mb-3">
+		<div class="form-title"> 
+			<h3>Description Search</h3>
+			<div class="form-subtitle"> 
+				<p>Search through descriptions from every current open job posting</p>
+			</div>
+			<input type="text" class="form-control" placeholder="Search..." name="description"> <br />
+			<h3>Location Search</h3>
+			<div class="form-subtitle"> 
+				<p>Find roles that are located wherever you would like to work (including remote!)</p>
+			</div>
+	  	<input type="text" class="form-control" placeholder="Preferred location..." name="location">
+		</div>
+	</div>
+	<br />
+	<button type="submit" class="btn btn-primary btn-lg btn-block" id="search">Submit →</button>
+</form>
+
+
+<% include ./partials/footer %>
