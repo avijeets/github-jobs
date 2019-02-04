@@ -1,6 +1,6 @@
-# Job Explorer
+# GitHub Jobs Explorer
 
-Job Explorer utilizes GitHub's Jobs API to let you browse job openings that cater to your technology and location needs. 
+Job Explorer utilizes [GitHub's Jobs API](http://jobs.github.com/api) to let you browse job openings that cater to your technology and location needs. 
 
 ## Introduction
 
@@ -36,7 +36,7 @@ Head over to http://localhost:3005 where the project should be running!
 
 Through building this application, I noticed there were some features that could make the application feel impersonal. However, it would be worth the time to explore solutions to the given problems:
 
-- Formatted date handling. As of right now, the date is being displayed as received from the Jobs API, but it would be great to add a library like MomentJS to make the date/time appear more personal
+- Formatted date handling. As of right now, the date is being displayed as received from the Jobs API, but it would be great to add a library to make the date/time appear more personal
 
 - Better handle the HTML strings brought in from the API. The `description` and `how_to_apply` properties in the JSON objects include HTML in them which can make the design look inconsistent if it overrides the container design. It would be smarter to build the system to handle those extreme cases
 
